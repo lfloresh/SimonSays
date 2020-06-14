@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Simon says</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      Simon says
+    </header>
+    <main>
+      <div id="red" class="color red" data-color="red"></div>
+      <div id="green" class="color green" data-color="green"></div>
+      <div id="yellow" class="color yellow" data-color="yellow"></div>
+      <div id="blue" class="color blue" data-color="blue"></div>
+      <div id="selection" class="selection">
+        <button class="btn" onclick="beginGame('easy')">
+          Easy
+        </button>
+        <button class="btn" onclick="beginGame('medium')">
+          Medium
+        </button>
+        <button class="btn" onclick="beginGame('hard')">
+          Hard
+        </button>
+      </div>
+    </main>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
